@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4B129551DD02CA80040432E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B129541DD02CA80040432E /* main.m */; };
+		D4B129581DD02CA80040432E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B129571DD02CA80040432E /* AppDelegate.m */; };
+		D4B1295B1DD02CA80040432E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B1295A1DD02CA80040432E /* ViewController.m */; };
+		D4B1295E1DD02CA80040432E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B1295C1DD02CA80040432E /* Main.storyboard */; };
+		D4B129611DD02CA80040432E /* HappyYoga.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D4B1295F1DD02CA80040432E /* HappyYoga.xcdatamodeld */; };
+		D4B129631DD02CA80040432E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B129621DD02CA80040432E /* Assets.xcassets */; };
+		D4B129661DD02CA80040432E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B129641DD02CA80040432E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D4B129501DD02CA80040432E /* HappyYoga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyYoga.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4B129541DD02CA80040432E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4B129561DD02CA80040432E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D4B129571DD02CA80040432E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D4B129591DD02CA80040432E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D4B1295A1DD02CA80040432E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D4B1295D1DD02CA80040432E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D4B129601DD02CA80040432E /* HappyYoga.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HappyYoga.xcdatamodel; sourceTree = "<group>"; };
+		D4B129621DD02CA80040432E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4B129651DD02CA80040432E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D4B129671DD02CA80040432E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4B1294D1DD02CA80040432E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4B129471DD02CA80040432E = {
+			isa = PBXGroup;
+			children = (
+				D4B129521DD02CA80040432E /* HappyYoga */,
+				D4B129511DD02CA80040432E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4B129511DD02CA80040432E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4B129501DD02CA80040432E /* HappyYoga.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4B129521DD02CA80040432E /* HappyYoga */ = {
+			isa = PBXGroup;
+			children = (
+				D4B129561DD02CA80040432E /* AppDelegate.h */,
+				D4B129571DD02CA80040432E /* AppDelegate.m */,
+				D4B129591DD02CA80040432E /* ViewController.h */,
+				D4B1295A1DD02CA80040432E /* ViewController.m */,
+				D4B1295C1DD02CA80040432E /* Main.storyboard */,
+				D4B129621DD02CA80040432E /* Assets.xcassets */,
+				D4B129641DD02CA80040432E /* LaunchScreen.storyboard */,
+				D4B129671DD02CA80040432E /* Info.plist */,
+				D4B1295F1DD02CA80040432E /* HappyYoga.xcdatamodeld */,
+				D4B129531DD02CA80040432E /* Supporting Files */,
+			);
+			path = HappyYoga;
+			sourceTree = "<group>";
+		};
+		D4B129531DD02CA80040432E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4B129541DD02CA80040432E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4B1294F1DD02CA80040432E /* HappyYoga */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4B1296A1DD02CA80040432E /* Build configuration list for PBXNativeTarget "HappyYoga" */;
+			buildPhases = (
+				D4B1294C1DD02CA80040432E /* Sources */,
+				D4B1294D1DD02CA80040432E /* Frameworks */,
+				D4B1294E1DD02CA80040432E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HappyYoga;
+			productName = HappyYoga;
+			productReference = D4B129501DD02CA80040432E /* HappyYoga.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4B129481DD02CA80040432E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "龍情雪心";
+				TargetAttributes = {
+					D4B1294F1DD02CA80040432E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = CE33GPRE9F;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D4B1294B1DD02CA80040432E /* Build configuration list for PBXProject "HappyYoga" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4B129471DD02CA80040432E;
+			productRefGroup = D4B129511DD02CA80040432E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4B1294F1DD02CA80040432E /* HappyYoga */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4B1294E1DD02CA80040432E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4B129661DD02CA80040432E /* LaunchScreen.storyboard in Resources */,
+				D4B129631DD02CA80040432E /* Assets.xcassets in Resources */,
+				D4B1295E1DD02CA80040432E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4B1294C1DD02CA80040432E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4B129611DD02CA80040432E /* HappyYoga.xcdatamodeld in Sources */,
+				D4B1295B1DD02CA80040432E /* ViewController.m in Sources */,
+				D4B129581DD02CA80040432E /* AppDelegate.m in Sources */,
+				D4B129551DD02CA80040432E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D4B1295C1DD02CA80040432E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4B1295D1DD02CA80040432E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D4B129641DD02CA80040432E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4B129651DD02CA80040432E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4B129681DD02CA80040432E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D4B129691DD02CA80040432E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4B1296B1DD02CA80040432E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CE33GPRE9F;
+				INFOPLIST_FILE = HappyYoga/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MyiOSFuncList.HappyYoga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D4B1296C1DD02CA80040432E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CE33GPRE9F;
+				INFOPLIST_FILE = HappyYoga/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MyiOSFuncList.HappyYoga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4B1294B1DD02CA80040432E /* Build configuration list for PBXProject "HappyYoga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4B129681DD02CA80040432E /* Debug */,
+				D4B129691DD02CA80040432E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4B1296A1DD02CA80040432E /* Build configuration list for PBXNativeTarget "HappyYoga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4B1296B1DD02CA80040432E /* Debug */,
+				D4B1296C1DD02CA80040432E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D4B1295F1DD02CA80040432E /* HappyYoga.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D4B129601DD02CA80040432E /* HappyYoga.xcdatamodel */,
+			);
+			currentVersion = D4B129601DD02CA80040432E /* HappyYoga.xcdatamodel */;
+			path = HappyYoga.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D4B129481DD02CA80040432E /* Project object */;
+}
