@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MainTabBarViewController.h
 //  HappyYoga
 //
 //  Created by qianjianlei on 16/11/7.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface HYMainTabBarViewController : UITabBarController
 
 @end
-

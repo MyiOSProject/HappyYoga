@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HYMeViewController.h
 //  HappyYoga
 //
 //  Created by qianjianlei on 16/11/7.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HYMeViewController : UIViewController
 
 @end
-

@@ -7,8 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "HYGlobal.h"
+#import "HYGlobalParams.h"
+#import "HYUtility.h"
+#import "HYMainTabBarViewController.h"
 
 @interface AppDelegate ()
+@property (nonatomic, strong) UIStoryboard *mainSB;
 
 @end
 
@@ -16,7 +21,80 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //定制导航条
+    UIImage *bgImage = [UIImage imageNamed:@"navbar_bg.png"];
+    UIImage *stretchedImage = [bgImage stretchableImageWithLeftCapWidth:1 topCapHeight:5];
+    [[UINavigationBar appearance] setBackgroundImage:stretchedImage forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    NSDictionary *textAttr = [NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
+    [[UINavigationBar appearance] setTitleTextAttributes:textAttr];
+    
+    //定制tabbar
+    [[UITabBar appearance] setTintColor:YKT_SYS_APP_BLUE];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:YKT_SYS_APP_BLUE,NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+    HYGlobalParams *gParams = [HYGlobalParams sharedInstance];
+    NSString *firstUse = [HYUtility loadCacheData:YKT_APP_FIRST_USED];
+    if (!firstUse) {
+        gParams.firstUse =  YES;
+        [HYUtility saveCacheData:@"firstUsed" withKey:YKT_APP_FIRST_USED];
+    }else{
+        gParams.firstUse =  NO;
+    }
+    gParams.firstUse =  YES;
+    gParams.anonymous = YES;
+    
+    UIStoryboard *mainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+//    UIStoryboard *mainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *start = [mainSB instantiateViewControllerWithIdentifier:@"Main"];
+    self.window.rootViewController = start;
+    [self.window makeKeyAndVisible];
+    
+    
+//    if(gParams.firstUse){
+//        UIViewController *welcome = [mainSB instantiateViewControllerWithIdentifier:@"wizard"];
+//        self.window.rootViewController = welcome;
+//    }else if (gParams.anonymous){
+//        UIViewController *login = [mainSB instantiateViewControllerWithIdentifier:@"login"];
+//        self.window.rootViewController = login;
+//    }else{
+//        UITabBarController *main = [mainSB instantiateViewControllerWithIdentifier:@"MainTabBar"];
+//        self.window.rootViewController = main;
+//    }
+    
+//    UITabBarController *main = [mainSB instantiateViewControllerWithIdentifier:@"login"];
+//    self.window.rootViewController = main;
+//    [self.window makeKeyAndVisible];
+//    return YES;
+
+    //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLogin:) name:HY_NOTIFICATION_WIZARD_DISMISSED object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLogin:) name:HY_NOTIFICATION_LOGIN_DISMISSED object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLogin:) name:HY_NOTIFICATION_USER_SIGNOUT object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLogin:) name:HY_NOTIFICATION_USER_SIGNOUT object:nil];
+    
+//    //创建窗口
+//    self.window = [[UIWindow alloc] init];
+//    self.window.frame = [UIScreen mainScreen].bounds;
+//
+//    self.window.rootViewController = [[HYMainTabBarViewController alloc] init];
+//    [self.window makeKeyAndVisible];
+    
+//    UIStoryboard *mainSB = [UIStoryboard storyboardWithName:@"me" bundle:nil];
+//    UIViewController *start = [mainSB instantiateViewControllerWithIdentifier:@"me"];
+//    self.window.rootViewController = start;
+//    [self.window makeKeyAndVisible];
+//    UIStoryboard *mainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    UIViewController *start = [mainSB instantiateViewControllerWithIdentifier:@"Main"];
+//    self.window.rootViewController = start;
+//    [self.window makeKeyAndVisible];
+    
+    
+//    [self showLogin:self];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLogin:) name:HY_NOTIFICATION_USER_SIGNOUT object:nil];
+//    
+//    [[NSNotificationCenter defaultCenter] postNotificationName:HY_NOTIFICATION_USER_SIGNOUT object:nil];
     return YES;
 }
 
@@ -30,11 +108,15 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+//    [[NSNotificationCenter defaultCenter] removeObserver:self name:HY_NOTIFICATION_WIZARD_DISMISSED object:nil];
+//    [[NSNotificationCenter defaultCenter] removeObserver:self name:HY_NOTIFICATION_LOGIN_DISMISSED object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:HY_NOTIFICATION_USER_SIGNOUT object:nil];
 }
 
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLogin:) name:HY_NOTIFICATION_USER_SIGNOUT object:nil];
 }
 
 
@@ -46,53 +128,18 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
-    [self saveContext];
+//    [self saveContext];
 }
 
 
-#pragma mark - Core Data stack
-
-@synthesize persistentContainer = _persistentContainer;
-
-- (NSPersistentContainer *)persistentContainer {
-    // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
-    @synchronized (self) {
-        if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"HappyYoga"];
-            [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
-                if (error != nil) {
-                    // Replace this implementation with code to handle the error appropriately.
-                    // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                    
-                    /*
-                     Typical reasons for an error here include:
-                     * The parent directory does not exist, cannot be created, or disallows writing.
-                     * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                     * The device is out of space.
-                     * The store could not be migrated to the current model version.
-                     Check the error message to determine what the actual problem was.
-                    */
-                    NSLog(@"Unresolved error %@, %@", error, error.userInfo);
-                    abort();
-                }
-            }];
-        }
-    }
-    
-    return _persistentContainer;
-}
-
-#pragma mark - Core Data Saving support
-
-- (void)saveContext {
-    NSManagedObjectContext *context = self.persistentContainer.viewContext;
-    NSError *error = nil;
-    if ([context hasChanges] && ![context save:&error]) {
-        // Replace this implementation with code to handle the error appropriately.
-        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        NSLog(@"Unresolved error %@, %@", error, error.userInfo);
-        abort();
-    }
+#pragma mark -
+#pragma mark notification handler
+- (void)showLogin:(id)sender
+{
+    UIStoryboard *mainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *start = [mainSB instantiateViewControllerWithIdentifier:@"login"];
+    self.window.rootViewController = start;
+    [self.window makeKeyAndVisible];
 }
 
 @end
