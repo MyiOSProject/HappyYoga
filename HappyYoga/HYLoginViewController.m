@@ -29,7 +29,6 @@
     [HYUtility saveCacheData:@"sa" withKey:HY_APP_LOGIN_USERNAME];
     [HYUtility saveCacheData:@"123" withKey:HY_APP_LOGIN_PWD];
     
-//    [[NSNotificationCenter defaultCenter] postNotificationName:HY_NOTIFICATION_LOGIN_DISMISSED object:nil];
     [self dismissViewControllerAnimated:YES completion:nil];
     [_delegate didLogin:YES];
 }

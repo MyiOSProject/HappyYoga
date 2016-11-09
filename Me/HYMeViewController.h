@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HYMeViewController : UIViewController
+@interface HYMeViewController : UITableViewController
+{
+    NSMutableArray *_data;
+}
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *mobileLabel;
 
+- (IBAction)touchLogout:(id)sender;
 @end

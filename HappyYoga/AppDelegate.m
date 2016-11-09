@@ -44,57 +44,12 @@
     gParams.firstUse =  YES;
     gParams.anonymous = YES;
     
-    UIStoryboard *mainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLogin:) name:HY_NOTIFICATION_USER_SIGNOUT object:nil];
     
-//    UIStoryboard *mainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *mainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *start = [mainSB instantiateViewControllerWithIdentifier:@"Main"];
     self.window.rootViewController = start;
     [self.window makeKeyAndVisible];
-    
-    
-//    if(gParams.firstUse){
-//        UIViewController *welcome = [mainSB instantiateViewControllerWithIdentifier:@"wizard"];
-//        self.window.rootViewController = welcome;
-//    }else if (gParams.anonymous){
-//        UIViewController *login = [mainSB instantiateViewControllerWithIdentifier:@"login"];
-//        self.window.rootViewController = login;
-//    }else{
-//        UITabBarController *main = [mainSB instantiateViewControllerWithIdentifier:@"MainTabBar"];
-//        self.window.rootViewController = main;
-//    }
-    
-//    UITabBarController *main = [mainSB instantiateViewControllerWithIdentifier:@"login"];
-//    self.window.rootViewController = main;
-//    [self.window makeKeyAndVisible];
-//    return YES;
-
-    //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLogin:) name:HY_NOTIFICATION_WIZARD_DISMISSED object:nil];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLogin:) name:HY_NOTIFICATION_LOGIN_DISMISSED object:nil];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLogin:) name:HY_NOTIFICATION_USER_SIGNOUT object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLogin:) name:HY_NOTIFICATION_USER_SIGNOUT object:nil];
-    
-//    //创建窗口
-//    self.window = [[UIWindow alloc] init];
-//    self.window.frame = [UIScreen mainScreen].bounds;
-//
-//    self.window.rootViewController = [[HYMainTabBarViewController alloc] init];
-//    [self.window makeKeyAndVisible];
-    
-//    UIStoryboard *mainSB = [UIStoryboard storyboardWithName:@"me" bundle:nil];
-//    UIViewController *start = [mainSB instantiateViewControllerWithIdentifier:@"me"];
-//    self.window.rootViewController = start;
-//    [self.window makeKeyAndVisible];
-//    UIStoryboard *mainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    UIViewController *start = [mainSB instantiateViewControllerWithIdentifier:@"Main"];
-//    self.window.rootViewController = start;
-//    [self.window makeKeyAndVisible];
-    
-    
-//    [self showLogin:self];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLogin:) name:HY_NOTIFICATION_USER_SIGNOUT object:nil];
-//    
-//    [[NSNotificationCenter defaultCenter] postNotificationName:HY_NOTIFICATION_USER_SIGNOUT object:nil];
     return YES;
 }
 
@@ -137,7 +92,7 @@
 - (void)showLogin:(id)sender
 {
     UIStoryboard *mainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *start = [mainSB instantiateViewControllerWithIdentifier:@"login"];
+    UIViewController *start = [mainSB instantiateViewControllerWithIdentifier:@"Main"];
     self.window.rootViewController = start;
     [self.window makeKeyAndVisible];
 }

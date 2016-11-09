@@ -20,7 +20,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ivw-Mm-FYm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-940" y="66"/>
+            <point key="canvasLocation" x="-1244" y="-220"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mPp-uV-WNN">
@@ -33,22 +33,13 @@
                     <view key="view" contentMode="scaleToFill" id="dAW-ro-Mjp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="duanxin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yz-5Y-AUa">
-                                <frame key="frameInset" minX="207" minY="455" width="105" height="156"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Glb-MR-oOq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJN-fM-gcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-172" y="65"/>
+            <point key="canvasLocation" x="-441" y="-221"/>
         </scene>
     </scenes>
 </document>
