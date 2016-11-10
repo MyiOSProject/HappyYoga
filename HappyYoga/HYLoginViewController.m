@@ -33,7 +33,7 @@
     [_delegate didLogin:YES];
 }
 - (IBAction)register:(UIButton *)sender {
-    [HYUtility clearCacheData:YKT_APP_FIRST_USED];
+    [HYUtility clearCacheData:HY_APP_FIRST_USED];
     [HYUtility clearCacheData:HY_APP_LOGIN_USERNAME];
     [HYUtility clearCacheData:HY_APP_LOGIN_PWD];
 }

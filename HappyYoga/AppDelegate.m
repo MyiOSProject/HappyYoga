@@ -34,10 +34,10 @@
     [[UITabBar appearance] setTintColor:YKT_SYS_APP_BLUE];
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:YKT_SYS_APP_BLUE,NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
     HYGlobalParams *gParams = [HYGlobalParams sharedInstance];
-    NSString *firstUse = [HYUtility loadCacheData:YKT_APP_FIRST_USED];
+    NSString *firstUse = [HYUtility loadCacheData:HY_APP_FIRST_USED];
     if (!firstUse) {
         gParams.firstUse =  YES;
-        [HYUtility saveCacheData:@"firstUsed" withKey:YKT_APP_FIRST_USED];
+        [HYUtility saveCacheData:@"firstUsed" withKey:HY_APP_FIRST_USED];
     }else{
         gParams.firstUse =  NO;
     }

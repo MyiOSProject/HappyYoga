@@ -31,16 +31,21 @@
 
 #define YKT_ALERT_BTN_OK @"确认"
 //first use
-#define YKT_APP_FIRST_USED @"com.happyyoga.app.firstUsed"
+#define HY_APP_FIRST_USED @"com.happyyoga.app.firstUsed"
 #define HY_APP_LOGIN_USERNAME @"com.happyyoga.app.userName"
 #define HY_APP_LOGIN_PWD @"com.happyyoga.app.loginPwd"
 
 //wizard
 #define HYNewfeatureCount 4
 
+//short message
+#define API_MESSAGE_LIST @"sms/list.htm"
+#define API_MESSAGE_DIALOG @"sms/detail.htm"
+#define API_MESSAGE_RELATION @"sms/relation.htm"
 
-#define YKT_API_SERVER_PREFIX @"http://124.160.63.237:81/ykt-work-server/"
-#define YKT_API_RETURN_SUCCESS 1
+
+#define HY_API_SERVER_PREFIX @"http://124.160.63.237:81/ykt-work-server/"
+#define HY_API_RETURN_SUCCESS 1
 
 
 

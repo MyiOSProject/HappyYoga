@@ -31,13 +31,13 @@
 }
 
 - (void)juageWhereTo:(HYGlobalParams *)params{
-    NSString *firstUse  = [HYUtility loadCacheData:YKT_APP_FIRST_USED];
+    NSString *firstUse  = [HYUtility loadCacheData:HY_APP_FIRST_USED];
     NSLog(@"====firstUse:%@",firstUse);
     if (!firstUse) {
         params.firstUse = YES;
-        [HYUtility saveCacheData:@"firstUse" withKey:YKT_APP_FIRST_USED];
+        [HYUtility saveCacheData:@"firstUse" withKey:HY_APP_FIRST_USED];
         
-        [HYUtility clearCacheData:YKT_APP_FIRST_USED];
+        [HYUtility clearCacheData:HY_APP_FIRST_USED];
     }else{
         params.firstUse = NO;
     }

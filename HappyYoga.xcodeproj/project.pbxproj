@@ -27,10 +27,21 @@
 		D4B129A91DD057C60040432E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B129A81DD057C60040432E /* UIView+Extension.m */; };
 		D4B129E01DD08A340040432E /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B129DE1DD08A340040432E /* icon@2x.png */; };
 		D4B129E11DD08A340040432E /* login_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B129DF1DD08A340040432E /* login_bg@2x.png */; };
+		D4BFE6F01DD4053200A5EDBC /* HYMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BFE6EF1DD4053200A5EDBC /* HYMessageTableViewController.m */; };
+		D4BFE6F31DD408D100A5EDBC /* HYMessageListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BFE6F21DD408D100A5EDBC /* HYMessageListTableViewCell.m */; };
+		D4BFE6F71DD40E4E00A5EDBC /* LCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BFE6F61DD40E4E00A5EDBC /* LCAlertView.m */; };
+		D4BFE6FD1DD40E7400A5EDBC /* RPFloatingPlaceholderTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BFE6FA1DD40E7400A5EDBC /* RPFloatingPlaceholderTextField.m */; };
+		D4BFE6FE1DD40E7400A5EDBC /* RPFloatingPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BFE6FC1DD40E7400A5EDBC /* RPFloatingPlaceholderTextView.m */; };
+		D4BFE7011DD40EF200A5EDBC /* HYNetWorkUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BFE7001DD40EF200A5EDBC /* HYNetWorkUtility.m */; };
+		D4BFE7041DD40F8E00A5EDBC /* HYApiResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BFE7031DD40F8E00A5EDBC /* HYApiResult.m */; };
+		D4BFE7071DD4108C00A5EDBC /* HYMessageDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BFE7061DD4108C00A5EDBC /* HYMessageDBManager.m */; };
+		D4BFE70A1DD410C100A5EDBC /* HYDataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BFE7091DD410C100A5EDBC /* HYDataUtil.m */; };
+		D4BFE70D1DD4115700A5EDBC /* HYMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BFE70C1DD4115700A5EDBC /* HYMessageModel.m */; };
+		D4BFE7101DD413F100A5EDBC /* HYPullingTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BFE70F1DD413F100A5EDBC /* HYPullingTableViewModel.m */; };
+		D4BFE7131DD4226100A5EDBC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4BFE7121DD4226100A5EDBC /* CoreData.framework */; };
 		D4F58C9D1DD2F17900FD1D09 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F58C9C1DD2F17900FD1D09 /* main.storyboard */; };
 		D4F58CA01DD2F22200FD1D09 /* HYMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F58C9F1DD2F22200FD1D09 /* HYMainTableViewController.m */; };
 		D4F58CA21DD2F23D00FD1D09 /* message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F58CA11DD2F23D00FD1D09 /* message.storyboard */; };
-		D4F58CA51DD2F25600FD1D09 /* HYMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F58CA41DD2F25600FD1D09 /* HYMessageViewController.m */; };
 		D4F58CB11DD2F5BA00FD1D09 /* ab_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4F58CA71DD2F5BA00FD1D09 /* ab_sel@2x.png */; };
 		D4F58CB21DD2F5BA00FD1D09 /* ab_unsel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4F58CA81DD2F5BA00FD1D09 /* ab_unsel@2x.png */; };
 		D4F58CB31DD2F5BA00FD1D09 /* call_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4F58CA91DD2F5BA00FD1D09 /* call_sel@2x.png */; };
@@ -86,12 +97,35 @@
 		D4B129A81DD057C60040432E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		D4B129DE1DD08A340040432E /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		D4B129DF1DD08A340040432E /* login_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_bg@2x.png"; sourceTree = "<group>"; };
+		D4BFE6EE1DD4053200A5EDBC /* HYMessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYMessageTableViewController.h; sourceTree = "<group>"; };
+		D4BFE6EF1DD4053200A5EDBC /* HYMessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYMessageTableViewController.m; sourceTree = "<group>"; };
+		D4BFE6F11DD408D100A5EDBC /* HYMessageListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYMessageListTableViewCell.h; sourceTree = "<group>"; };
+		D4BFE6F21DD408D100A5EDBC /* HYMessageListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYMessageListTableViewCell.m; sourceTree = "<group>"; };
+		D4BFE6F41DD40DFD00A5EDBC /* HYNetHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYNetHeader.h; sourceTree = "<group>"; };
+		D4BFE6F51DD40E4E00A5EDBC /* LCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAlertView.h; sourceTree = "<group>"; };
+		D4BFE6F61DD40E4E00A5EDBC /* LCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAlertView.m; sourceTree = "<group>"; };
+		D4BFE6F81DD40E7400A5EDBC /* RPFloatingPlaceholderConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderConstants.h; sourceTree = "<group>"; };
+		D4BFE6F91DD40E7400A5EDBC /* RPFloatingPlaceholderTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderTextField.h; sourceTree = "<group>"; };
+		D4BFE6FA1DD40E7400A5EDBC /* RPFloatingPlaceholderTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPFloatingPlaceholderTextField.m; sourceTree = "<group>"; };
+		D4BFE6FB1DD40E7400A5EDBC /* RPFloatingPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderTextView.h; sourceTree = "<group>"; };
+		D4BFE6FC1DD40E7400A5EDBC /* RPFloatingPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPFloatingPlaceholderTextView.m; sourceTree = "<group>"; };
+		D4BFE6FF1DD40EF200A5EDBC /* HYNetWorkUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYNetWorkUtility.h; sourceTree = "<group>"; };
+		D4BFE7001DD40EF200A5EDBC /* HYNetWorkUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYNetWorkUtility.m; sourceTree = "<group>"; };
+		D4BFE7021DD40F8E00A5EDBC /* HYApiResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYApiResult.h; sourceTree = "<group>"; };
+		D4BFE7031DD40F8E00A5EDBC /* HYApiResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYApiResult.m; sourceTree = "<group>"; };
+		D4BFE7051DD4108C00A5EDBC /* HYMessageDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYMessageDBManager.h; sourceTree = "<group>"; };
+		D4BFE7061DD4108C00A5EDBC /* HYMessageDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYMessageDBManager.m; sourceTree = "<group>"; };
+		D4BFE7081DD410C100A5EDBC /* HYDataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDataUtil.h; sourceTree = "<group>"; };
+		D4BFE7091DD410C100A5EDBC /* HYDataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDataUtil.m; sourceTree = "<group>"; };
+		D4BFE70B1DD4115700A5EDBC /* HYMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYMessageModel.h; sourceTree = "<group>"; };
+		D4BFE70C1DD4115700A5EDBC /* HYMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYMessageModel.m; sourceTree = "<group>"; };
+		D4BFE70E1DD413F100A5EDBC /* HYPullingTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPullingTableViewModel.h; sourceTree = "<group>"; };
+		D4BFE70F1DD413F100A5EDBC /* HYPullingTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPullingTableViewModel.m; sourceTree = "<group>"; };
+		D4BFE7121DD4226100A5EDBC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D4F58C9C1DD2F17900FD1D09 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		D4F58C9E1DD2F22200FD1D09 /* HYMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYMainTableViewController.h; sourceTree = "<group>"; };
 		D4F58C9F1DD2F22200FD1D09 /* HYMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYMainTableViewController.m; sourceTree = "<group>"; };
 		D4F58CA11DD2F23D00FD1D09 /* message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = message.storyboard; sourceTree = "<group>"; };
-		D4F58CA31DD2F25600FD1D09 /* HYMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYMessageViewController.h; sourceTree = "<group>"; };
-		D4F58CA41DD2F25600FD1D09 /* HYMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYMessageViewController.m; sourceTree = "<group>"; };
 		D4F58CA71DD2F5BA00FD1D09 /* ab_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ab_sel@2x.png"; sourceTree = "<group>"; };
 		D4F58CA81DD2F5BA00FD1D09 /* ab_unsel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ab_unsel@2x.png"; sourceTree = "<group>"; };
 		D4F58CA91DD2F5BA00FD1D09 /* call_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "call_sel@2x.png"; sourceTree = "<group>"; };
@@ -120,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4BFE7131DD4226100A5EDBC /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +172,7 @@
 				D4B129781DD031740040432E /* res */,
 				D4B129521DD02CA80040432E /* HappyYoga */,
 				D4B129511DD02CA80040432E /* Products */,
+				D4BFE7111DD4226100A5EDBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,7 +193,6 @@
 				D4B129621DD02CA80040432E /* Assets.xcassets */,
 				D4B129641DD02CA80040432E /* LaunchScreen.storyboard */,
 				D4B129671DD02CA80040432E /* Info.plist */,
-				D4B1295F1DD02CA80040432E /* HappyYoga.xcdatamodeld */,
 				D4B129891DD0333D0040432E /* HYWizardViewController.h */,
 				D4B1298A1DD0333D0040432E /* HYWizardViewController.m */,
 				D4B1298C1DD0343A0040432E /* HYLoginViewController.h */,
@@ -227,8 +262,10 @@
 			isa = PBXGroup;
 			children = (
 				D4F58CA11DD2F23D00FD1D09 /* message.storyboard */,
-				D4F58CA31DD2F25600FD1D09 /* HYMessageViewController.h */,
-				D4F58CA41DD2F25600FD1D09 /* HYMessageViewController.m */,
+				D4BFE6EE1DD4053200A5EDBC /* HYMessageTableViewController.h */,
+				D4BFE6EF1DD4053200A5EDBC /* HYMessageTableViewController.m */,
+				D4BFE6F11DD408D100A5EDBC /* HYMessageListTableViewCell.h */,
+				D4BFE6F21DD408D100A5EDBC /* HYMessageListTableViewCell.m */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -256,8 +293,17 @@
 		D4B129961DD043DB0040432E /* common */ = {
 			isa = PBXGroup;
 			children = (
+				D4BFE6F51DD40E4E00A5EDBC /* LCAlertView.h */,
+				D4BFE6F61DD40E4E00A5EDBC /* LCAlertView.m */,
 				D4B1299C1DD048D00040432E /* HYUtility.h */,
 				D4B1299D1DD048D00040432E /* HYUtility.m */,
+				D4BFE6F41DD40DFD00A5EDBC /* HYNetHeader.h */,
+				D4BFE6FF1DD40EF200A5EDBC /* HYNetWorkUtility.h */,
+				D4BFE7001DD40EF200A5EDBC /* HYNetWorkUtility.m */,
+				D4BFE7021DD40F8E00A5EDBC /* HYApiResult.h */,
+				D4BFE7031DD40F8E00A5EDBC /* HYApiResult.m */,
+				D4BFE70E1DD413F100A5EDBC /* HYPullingTableViewModel.h */,
+				D4BFE70F1DD413F100A5EDBC /* HYPullingTableViewModel.m */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -265,6 +311,13 @@
 		D4B129971DD043DB0040432E /* data */ = {
 			isa = PBXGroup;
 			children = (
+				D4BFE7081DD410C100A5EDBC /* HYDataUtil.h */,
+				D4BFE7091DD410C100A5EDBC /* HYDataUtil.m */,
+				D4B1295F1DD02CA80040432E /* HappyYoga.xcdatamodeld */,
+				D4BFE7051DD4108C00A5EDBC /* HYMessageDBManager.h */,
+				D4BFE7061DD4108C00A5EDBC /* HYMessageDBManager.m */,
+				D4BFE70B1DD4115700A5EDBC /* HYMessageModel.h */,
+				D4BFE70C1DD4115700A5EDBC /* HYMessageModel.m */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -272,6 +325,11 @@
 		D4B129A21DD056500040432E /* extension */ = {
 			isa = PBXGroup;
 			children = (
+				D4BFE6F81DD40E7400A5EDBC /* RPFloatingPlaceholderConstants.h */,
+				D4BFE6F91DD40E7400A5EDBC /* RPFloatingPlaceholderTextField.h */,
+				D4BFE6FA1DD40E7400A5EDBC /* RPFloatingPlaceholderTextField.m */,
+				D4BFE6FB1DD40E7400A5EDBC /* RPFloatingPlaceholderTextView.h */,
+				D4BFE6FC1DD40E7400A5EDBC /* RPFloatingPlaceholderTextView.m */,
 				D4B129A71DD057C60040432E /* UIView+Extension.h */,
 				D4B129A81DD057C60040432E /* UIView+Extension.m */,
 			);
@@ -285,6 +343,14 @@
 				D4B129DF1DD08A340040432E /* login_bg@2x.png */,
 			);
 			path = login;
+			sourceTree = "<group>";
+		};
+		D4BFE7111DD4226100A5EDBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4BFE7121DD4226100A5EDBC /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D4F58CA61DD2F5BA00FD1D09 /* tabbar */ = {
@@ -426,20 +492,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4F58CA51DD2F25600FD1D09 /* HYMessageViewController.m in Sources */,
 				D4B1298B1DD0333D0040432E /* HYWizardViewController.m in Sources */,
 				D4B1299B1DD044BC0040432E /* HYGlobalParams.m in Sources */,
+				D4BFE7011DD40EF200A5EDBC /* HYNetWorkUtility.m in Sources */,
+				D4BFE70D1DD4115700A5EDBC /* HYMessageModel.m in Sources */,
+				D4BFE7101DD413F100A5EDBC /* HYPullingTableViewModel.m in Sources */,
+				D4BFE6F01DD4053200A5EDBC /* HYMessageTableViewController.m in Sources */,
+				D4BFE6F31DD408D100A5EDBC /* HYMessageListTableViewCell.m in Sources */,
 				D4B129A91DD057C60040432E /* UIView+Extension.m in Sources */,
+				D4BFE70A1DD410C100A5EDBC /* HYDataUtil.m in Sources */,
 				D4B129611DD02CA80040432E /* HappyYoga.xcdatamodeld in Sources */,
 				D4B1298E1DD0343A0040432E /* HYLoginViewController.m in Sources */,
 				D4B129581DD02CA80040432E /* AppDelegate.m in Sources */,
 				D4B129941DD03F780040432E /* HYMainViewController.m in Sources */,
+				D4BFE7041DD40F8E00A5EDBC /* HYApiResult.m in Sources */,
 				D4B129551DD02CA80040432E /* main.m in Sources */,
+				D4BFE6F71DD40E4E00A5EDBC /* LCAlertView.m in Sources */,
+				D4BFE7071DD4108C00A5EDBC /* HYMessageDBManager.m in Sources */,
 				D4B129A11DD050FE0040432E /* HYMainTabBarViewController.m in Sources */,
+				D4BFE6FD1DD40E7400A5EDBC /* RPFloatingPlaceholderTextField.m in Sources */,
 				D4B1299E1DD048D00040432E /* HYUtility.m in Sources */,
 				D4B129801DD031BB0040432E /* HYMeViewController.m in Sources */,
 				D4F58CA01DD2F22200FD1D09 /* HYMainTableViewController.m in Sources */,
 				D4F58CD01DD313FE00FD1D09 /* HYMeIndexCell.m in Sources */,
+				D4BFE6FE1DD40E7400A5EDBC /* RPFloatingPlaceholderTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +637,7 @@
 				INFOPLIST_FILE = HappyYoga/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = MyiOSFuncList.HappyYoga;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -574,6 +651,7 @@
 				INFOPLIST_FILE = HappyYoga/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = MyiOSFuncList.HappyYoga;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -609,7 +687,8 @@
 				D4B129601DD02CA80040432E /* HappyYoga.xcdatamodel */,
 			);
 			currentVersion = D4B129601DD02CA80040432E /* HappyYoga.xcdatamodel */;
-			path = HappyYoga.xcdatamodeld;
+			name = HappyYoga.xcdatamodeld;
+			path = ../../HappyYoga/HappyYoga.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
